@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "survival_campfire",
+  "version": "${version}",
+  "name": "Survival Campfire",
+  "description": "Campfire survival mechanic inspired by Don't Starve",
+  "authors": [
+    "onfeuh"
+  ],
+  "contact": {
+    "homepage": "https://controlistes.fr/",
+    "issues": "https://github.com/Controlistes/SurvivalCampfire/issues",
+    "sources": "https://github.com/Controlistes/SurvivalCampfire"
+  },
+  "license": "WTFPLv2",
+  "icon": "assets/survival_campfire/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      {
+        "adapter": "kotlin",
+        "value": "fr.controlistes.survival_campfire.SurvivalCampfire"
+      }
+    ],
+    "modmenu": [
+      "fr.controlistes.survival_campfire.integrations.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "survival_campfire.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${fabricloader}",
+    "fabric-api": ">=${fabric_api}",
+    "fabric-language-kotlin": ">=${fabric_language_kotlin}",
+    "minecraft": ">=${minecraft}",
+    "java": ">=${java}"
+  },
+  "custom": {
+    "modmenu": {}
+  }
+}

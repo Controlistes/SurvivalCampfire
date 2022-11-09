@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "fr.controlistes.survival_campfire.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "mixins": [
+    "CampfireBlockMixin",
+    "CampfireBlockEntityMixin",
+    "BlocksMixin"
+  ]
+}
