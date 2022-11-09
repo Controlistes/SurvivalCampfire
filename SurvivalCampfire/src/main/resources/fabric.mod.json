@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "survival_campfire",
-  "version": "${version}",
+  "version": "0.0.1",
   "name": "Survival Campfire",
   "description": "Campfire survival mechanic inspired by Don't Starve",
   "authors": [
